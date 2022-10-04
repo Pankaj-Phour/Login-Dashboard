@@ -1,0 +1,42 @@
+.body{
+    max-height: 100%;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-height: 100%;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+}
+.navItem{
+    font-size: 23px;
+    font-weight: 600;
+    color:yellowgreen;
+    padding: 5px;
+}
+.navItem:hover{
+    color: green;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.headers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+input{
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid gray;
+    color: black;
+    font-size: 16px;
+}

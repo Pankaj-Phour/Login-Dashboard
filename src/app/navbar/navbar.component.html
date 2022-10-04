@@ -1,0 +1,12 @@
+<div class="body">
+    <div class="navbar">
+        <div class="navItem" routerLink="/" [ngStyle]="{'border': (login===true) ? '2px solid yellowgreen' : 'none'}">Login</div>
+        <div class="navItem" routerLink="/dashboard" [ngStyle]="{'border': (dashboard===true) ? '2px solid yellowgreen' : 'none'}">Dashboard</div>
+        
+        <div class="navItem" *ngIf="dashboard">
+            <form [formGroup]="search">
+                <input placeholder="Search user" type="text" formControlName="name" (input)="input($event)">
+            </form>
+        </div>
+    </div>
+</div>

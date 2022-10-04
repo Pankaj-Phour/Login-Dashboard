@@ -1,0 +1,21 @@
+<div class="body">
+    <div class="container">
+        <div class="navbar">
+                    <form [formGroup]="search">
+                    <input placeholder="Search user" type="text" formControlName="name" (input)="input($event)">
+                </form>
+        </div>
+        <div class="data">
+            <div class="card" *ngFor="let card of data">
+               <div class="cardImage">
+                <img [src]="card.avatar" width="auto" height="auto">
+               </div>
+               <div class="cardName">
+                   <p>Id : {{card.id}}</p>
+                   <p>Name : <span style="text-align: right;">{{card.name}}</span></p>
+               </div>
+            </div>
+        </div>
+        <div class="data" *ngIf="noData">No Data Found</div>
+    </div>
+</div>
