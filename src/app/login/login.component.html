@@ -1,0 +1,33 @@
+<div class="body">
+    <div class="container">
+        <div class="form">
+            <form [formGroup]="Login">
+                <div class="formgroup">
+                <label for="email">
+                    Email 
+                </label>
+                <input type="email" placeholder="Enter your email" formControlName="email" autocomplete="true">
+                <div class="error" *ngIf="Login.get('email').hasError('required') && (Submit)">Please enter your Email Id</div>
+                <div class="error" *ngIf="Login.get('email').hasError('email') && (Submit)">Please enter valid Email Id</div>
+
+            </div>
+            <div class="formgroup">
+                <label for="Password">
+                    Password 
+                </label>
+                <input type="password" placeholder="Enter your Password" formControlName="password" autocomplete="true">
+                <div class="error" *ngIf="Login.get('password').hasError('required') && (Submit)">Please enter your Password</div>
+            </div>
+            <div class="button">
+                <div class="forgot">Forgot Password? </div>
+                <button type="button" class="btn" (click)="submit()">Submit</button>
+
+            </div>
+
+            </form>
+        </div>
+    </div>
+<form [formGroup]="form" style="display: none;">
+
+</form>
+</div>

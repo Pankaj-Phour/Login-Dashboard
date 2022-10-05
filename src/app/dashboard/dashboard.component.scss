@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    object-fit: contain;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.cardImage{
+    max-width: 100%;
+    width: 35%;
+}
+.cardName{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  height: 55px;
+  max-width: 100%;
+  width: 60%;
+    // text-align: center;
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    // background-color: white;
+
+}
+// .headers{
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     width: 100%;
+
+// }
+// input{
+//     padding: 10px;
+//     border-radius: 6px;
+//     outline: none;
+//     border: 1px solid gray;
+//     color: black;
+//     font-size: 16px;
+// }
+.login{
+    cursor: pointer;
+    font-size: 19px;
+    text-decoration: underline;
+}
+.login:hover{
+    color: orange;
+}

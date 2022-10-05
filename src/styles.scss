@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px !important;
+}
+.card{
+    width: 300px;
+    height:200px;
+    box-shadow: 0 2px 4px 0 #65656542;
+    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px !important;
+    padding-inline: 5px;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
