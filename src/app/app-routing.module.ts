@@ -13,7 +13,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+
+  // added hashrouting to navigate on different pages independently on poduction server 
+  imports: [RouterModule.forRoot(routes, {useHash:true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
